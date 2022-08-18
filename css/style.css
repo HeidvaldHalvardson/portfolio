@@ -1,0 +1,115 @@
+/*GLOBAL*/
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: vt323, monospace;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  background-image: url("../img/bg.jpg");
+}
+
+.sticky-footer {
+  flex-grow: 1;
+}
+
+.page-header {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+
+.title {
+  text-align: center;
+  font-weight: normal;
+}
+
+/*MAIN*/
+
+.page-main {
+  background-image: url("../img/bg-bottom.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.page-main__inner {
+  width: 960px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.container__hero {
+  width: 100px;
+  height: 100px;
+
+  background-size: auto 100px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.container__hero--mario {
+  background-image: url("../img/mario.png");
+}
+
+.container__hero--luigi {
+  background-image: url("../img/luigi.png");
+}
+
+.button {
+  display: block;
+  width: 100px;
+  padding-top: 20px;
+  box-sizing: border-box;
+
+  color: #000000;
+  font-size: 27px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+
+  background-image: url("../img/pipe.png");
+  background-size: 100px auto;
+}
+
+.button--works {
+  height: 265px;
+}
+
+.button--about {
+  height: 170px;
+}
+
+.button:hover {
+  color: #dd0000;
+}
+
+.button:active {
+  font-weight: normal;
+}
+
+/*FOOTER*/
+
+.page-footer {
+  height: 113px;
+  background-image: url("../img/bg-bottom-less.jpg");
+}
+
+.page-footer__inner {
+
+}
+
+
