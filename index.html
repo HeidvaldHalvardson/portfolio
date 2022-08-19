@@ -10,29 +10,31 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="page-header">
-    <h1 class="title">Hi! My name is Vlad Bogodyazh!<br>
-      And I'm a beginner frontend-developer.</h1>
-  </header>
   <main class="page-main sticky-footer">
     <div class="page-main__inner">
-      <div class="container">
-        <div class="container__hero container__hero--mario"></div>
+      <h1 class="page-title">Hi! My name is Vlad Bogodyazh!<br>
+        And I'm a beginner frontend-developer.</h1>
+      <section class="container">
+        <div class="container__hero"></div>
         <a class="button button--works" href="#">My works</a>
-      </div>
-      <div class="contacts">
-        <h2 class="visually-hidden">Contacts</h2>
-        <a class="contacts__github" href="https://github.com/HeidvaldHalvardson">git</a>
-        <a class="contacts__telegram" href="https://t.me/HeidvaldHalvardson">asdasd</a>
-        <a class="contacts__mail" href="mailto:liquid98@yandex.by">asdasd</a>
-      </div>
-      <div class="container">
-        <div class="container__hero container__hero--luigi"></div>
-        <a class="button button--about" href="#">About me</a>
-      </div>
+      </section>
+      <section class="info">
+        <div class="contacts">
+          <h2 class="info__title">Contacts</h2>
+          <div class="contacts__links">
+            <a class="contacts__link contacts__link--github" href="https://github.com/HeidvaldHalvardson" target="_blank"><span class="visually-hidden">github</span></a>
+            <a class="contacts__link contacts__link--telegram" href="https://t.me/HeidvaldHalvardson" target="_blank"><span class="visually-hidden">telegram</span></a>
+            <a class="contacts__link contacts__link--mail" href="mailto:liquid98@yandex.by" target="_blank"><span class="visually-hidden">mail</span></a>
+          </div>
+        </div>
+        <div class="about">
+          <h2 class="info__title">About me</h2>
+          <p class="info__text">I love coffee because I can't sleep until the job is done.</p>
+        </div>
+      </section>
     </div>
   </main>
-  <footer class="page-footer">
-  </footer>
+  <div class="page-footer">
+  </div>
 </body>
 </html>
