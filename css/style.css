@@ -608,16 +608,12 @@ ul {
 
 @media (min-width: 1920px) {
   .slider__button {
-    width: 75px;
-    height: 75px;
     background-size: 75px auto;
   }
 }
 
 @media (min-width: 3840px) {
   .slider__button {
-    width: 150px;
-    height: 150px;
     background-size: 150px auto;
   }
 }
