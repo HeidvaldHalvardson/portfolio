@@ -343,10 +343,6 @@ body {
   box-shadow: 0 0 10px 2px #ffffff inset;
 }
 
-.contacts__link:active {
-  box-shadow: 0 0 20px 2px #ffffff inset;
-}
-
 .contacts__link--github {
   background-image: url("../img/github-mario.png");
 }
@@ -473,72 +469,71 @@ body {
   background-image: url("../img/bg-footer-white.jpg");
 }
 
-.slider {
+.swiper {
   position: relative;
-
-  background-color: rgba(255,255,255, 30%);
+  width: 700px;
   margin: 0 auto;
-  border-radius: 30px;
-  padding: 30px;
   box-sizing: border-box;
-}
-
-.slider::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 30px solid rgba(255,255,255, 30%);
-  border-left: 30px solid transparent;
-
-  position: absolute;
-  margin: auto;
-  bottom: -30px;
-  left: 0;
-  right: 0;
+  text-align: center;
 }
 
 @media (min-width: 1920px) {
-  .slider {
-    border-radius: 45px;
-    padding: 45px;
-  }
-
-  .slider::after{
-    border-top: 45px solid rgba(255,255,255, 30%);
-    border-left: 45px solid transparent;
-    bottom: -45px;
+  .swiper {
+    width: 1050px;
   }
 }
 
 @media (min-width: 3840px) {
-  .slider {
-    border-radius: 112px;
-    padding: 112px;
-  }
-
-  .slider::after {
-    border-top: 113px solid rgba(255,255,255, 30%);
-    border-left: 113px solid transparent;
-    bottom: -113px;
+  .swiper {
+    width: 2100px;
   }
 }
 
-.slide__title {
+ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+.slide__title {
+  margin-top: 0;
+  margin-bottom: 10px;
   grid-column: 1/-1;
-  font-size: 25px;
+  font-size: 45px;
   font-weight: normal;
 }
 
 @media (min-width: 1920px) {
   .slide__title {
-    font-size: 38px;
+    font-size: 68px;
+    margin-bottom: 15px;
   }
 }
 
 @media (min-width: 3840px) {
   .slide__title {
-    font-size: 95px;
+    font-size: 135px;
+    margin-bottom: 30px;
+  }
+}
+
+.slide p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+
+@media (min-width: 1920px) {
+  .slide p {
+    margin-bottom: 15px;
+    font-size: 57px;
+  }
+}
+
+@media (min-width: 3840px) {
+  .slide p {
+    margin-bottom: 30px;
+    font-size: 114px;
   }
 }
 
@@ -595,37 +590,36 @@ body {
 
 .slider__button {
   position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-
-  background-color: rgba(255, 255, 255, 30%);
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-}
-
-.slider__button--prev {
-  left: -40px;
-}
-
-.slider__button--next {
-  right: -40px;
+  border: none;
+  background-color: transparent;
 }
 
 .slider__button:hover {
-  background-color: rgba(255, 255, 255, 50%);
+  box-shadow: 0 0 10px 2px #ffffff inset;
 }
 
-.slider__arrow {
-  width: 18px;
-  height: 36px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  margin: auto;
-  fill: #fcfcfc;
+.swiper-button-prev {
+  background-image: url("../img/arrow-left.png");
 }
+
+.swiper-button-next {
+  background-image: url("../img/arrow-right.png");
+}
+
+@media (min-width: 1920px) {
+  .slider__button {
+    width: 75px;
+    height: 75px;
+    background-size: 75px auto;
+  }
+}
+
+@media (min-width: 3840px) {
+  .slider__button {
+    width: 150px;
+    height: 150px;
+    background-size: 150px auto;
+  }
+}
+
+

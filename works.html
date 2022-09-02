@@ -7,31 +7,46 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.css"/>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <title>Vlad Bogodyazh - works</title>
 </head>
 <body>
   <main class="works-main">
     <div class="works__inner">
-      <section class="slider">
-        <div class="slide">
-          <h2 class="slide__title">Gllacy Shop (HTML&CSS)</h2>
-          <a class="slide__link" href="https://heidvaldhalvardson.github.io/1351381-gllacy-32/">
-            <img class="slide__link-img" src="img/works/gllacy.jpg" alt="work" width="405" height="235">
-          </a>
-        </div>
-        <button class="slider__button slider__button--prev" type="button">
-          <svg class="slider__arrow" aria-hidden="true" focusable="false" viewBox="0 0 6 12" width="6" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8 1.8a.66.66 0 1 0-.94-.94L.2 5.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L1.6 6l4.2-4.2Z"/>
-          </svg>
+      <section class="swiper">
+        <ul class="swiper-wrapper">
+          <li class="slide swiper-slide">
+            <h2 class="slide__title">Gllacy Shop</h2>
+            <p>Technologies: HTML & CSS</p>
+            <p>Link to the page: <a href="https://heidvaldhalvardson.github.io/1351381-gllacy-32/">follow</a></p>
+            <p>Link to the code: <a href="https://github.com/HeidvaldHalvardson/1351381-gllacy-32">follow</a></p>
+          </li>
+          <li class="slide swiper-slide">
+            <h2 class="slide__title">Pink</h2>
+            <p>Technologies: HTML & CSS / webpack</p>
+            <p>Link to the page: <a href="https://heidvaldhalvardson.github.io/1351381-gllacy-32/">follow</a></p>
+            <p>Link to the code: <a href="https://github.com/HeidvaldHalvardson/1351381-gllacy-32">follow</a></p>
+          </li>
+          <li class="slide swiper-slide">
+            <h2 class="slide__title">Farm Store</h2>
+            <p>Technologies: HTML & CSS</p>
+            <p>Link to the page: <a href="https://heidvaldhalvardson.github.io/1351381-gllacy-32/">follow</a></p>
+            <p>Link to the code: <a href="https://github.com/HeidvaldHalvardson/1351381-gllacy-32">follow</a></p>
+          </li>
+          <li class="slide swiper-slide">
+            <h2 class="slide__title">Glla</h2>
+            <p>Technologies: HTML & CSS</p>
+            <p>Link to the page: <a href="https://heidvaldhalvardson.github.io/1351381-gllacy-32/">follow</a></p>
+            <p>Link to the code: <a href="https://github.com/HeidvaldHalvardson/1351381-gllacy-32">follow</a></p>
+          </li>
+        </ul>
+        <div class="slider__button swiper-button-prev" type="button">
           <span class="visually-hidden">previous</span>
-        </button>
-        <button class="slider__button slider__button--next" type="button">
-          <svg class="slider__arrow" aria-hidden="true" focusable="false" viewBox="0 0 6 12" width="6" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z"/>
-          </svg>
+        </div>
+        <div class="slider__button swiper-button-next" type="button">
           <span class="visually-hidden">next</span>
-        </button>
+        </div>
       </section>
       <a class="go-back" href="index.html">
         <span class="go-back__text">Go back</span>
@@ -41,5 +56,9 @@
 
   </main>
   <div class=" page-footer page-footer--works"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>
