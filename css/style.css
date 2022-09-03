@@ -318,9 +318,12 @@ body {
 }
 
 .contacts__link {
+  position: relative;
   display: block;
   width: 50px;
   height: 50px;
+
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 1920px) {
@@ -534,57 +537,6 @@ ul {
   .slide p {
     margin-bottom: 30px;
     font-size: 114px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .slide__link-img {
-    width: 605px;
-    height: 350px;
-  }
-}
-
-@media (min-width: 3840px) {
-  .slide__link-img {
-    width: 1512px;
-    height: 875px;
-  }
-}
-
-.slide__tech-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: normal;
-  font-size: 25px;
-}
-
-@media (min-width: 1920px) {
-  .slide__tech-title {
-    margin-bottom: 15px;
-    font-size: 37.5px;
-  }
-}
-
-@media (min-width: 3840px) {
-  .slide__tech-title {
-    margin-bottom: 37.5px;
-    font-size: 94px;
-  }
-}
-
-.slide__tech-value {
-  font-size: 20px;
-}
-
-@media (min-width: 1920px) {
-  .slide__tech-value {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 3840px) {
-  .slide__tech-value {
-    font-size: 75px;
   }
 }
 
