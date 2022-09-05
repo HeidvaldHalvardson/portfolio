@@ -39,15 +39,15 @@ button.addEventListener('click', evt => marioDown(evt));
 const links = document.querySelectorAll('.contacts__link');
 
 for (let link of links) {
-  link.addEventListener('mousedown', () => {
-    link.style.bottom = '20px';
+  link.addEventListener('pointerdown', () => {
+    link.style.bottom = '10px';
   });
 
-  link.addEventListener('mouseup', () => {
+  link.addEventListener('pointerup', (evt) => {
     link.style.bottom = '0';
   });
 
-  link.addEventListener('mouseout', () => {
+  link.addEventListener('pointerout', () => {
     link.style.bottom = '0';
   })
 }

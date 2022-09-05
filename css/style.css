@@ -143,7 +143,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
 }
 
 @media (min-width: 1920px) {
@@ -173,14 +172,16 @@ body {
   padding-top: 20px;
   box-sizing: border-box;
 
-  color: #000000;
+  color: #ffffff;
 
-  font-weight: bold;
   text-decoration: none;
   text-align: center;
   font-size: 27px;
 
   background-image: url("../img/pipe.png");
+
+  position: relative;
+  fill: #ffffff;
 }
 
 @media (min-width: 1920px) {
@@ -204,11 +205,54 @@ body {
 }
 
 .button:hover {
-  color: #dd0000;
+  color: #a0a0a0;
+  fill: #a0a0a0;
 }
 
 .button:active {
   font-weight: normal;
+}
+
+.button__text {
+  position: absolute;
+  top: 50px;
+  right: -100px;
+}
+
+@media (min-width: 1920px) {
+  .button__text {
+    right: -140px;
+  }
+}
+
+@media (min-width: 3840px) {
+  .button__text {
+    top: 100px;
+    right: -270px;
+  }
+}
+
+.button__svg {
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  right: -50px;
+}
+
+@media (min-width: 1920px) {
+  .button__svg {
+    width: 60px;
+    top: 0;
+    right: -80px;
+  }
+}
+
+@media (min-width: 3840px) {
+  .button__svg {
+    width: 120px;
+    top: 0;
+    right: -130px;
+  }
 }
 
 .info {
